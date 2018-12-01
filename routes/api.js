@@ -26,7 +26,10 @@ module.exports = function (app) {
 
   app.route('/api/stock-prices')
     .get(function (req, res){
+      var stock = req.query.stock.toUpperCase();
       
+      console.log(stock);
+      //res.json({stock: stock});
     });
     
 };
